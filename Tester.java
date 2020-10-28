@@ -10,5 +10,9 @@ public class Tester{
 		a.setPassword("hello world"); //changing pass
 		System.out.println(a.getPassword()); //testing setpass
 
+		System.out.println(a.deposit(100.0)); //depositing
+		System.out.println(a.getBalance()); //testing depos
+		System.out.println(a.deposit(-800)); //testing false 
+
 	}
 }
