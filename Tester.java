@@ -14,5 +14,10 @@ public class Tester{
 		System.out.println(a.getBalance()); //testing depos
 		System.out.println(a.deposit(-800)); //testing false 
 
+		System.out.println(a.withdraw(80)); //withdrawing
+		System.out.println(a.getBalance()); //testing if it worked
+		System.out.println(a.withdraw(-1.0)); //testing false
+		System.out.println(a.withdraw(400000)); //testing false
+
 	}
 }
