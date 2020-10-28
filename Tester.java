@@ -19,5 +19,7 @@ public class Tester{
 		System.out.println(a.withdraw(-1.0)); //testing false
 		System.out.println(a.withdraw(400000)); //testing false
 
+		System.out.println(a.toString()); //testing tostring
+
 	}
 }
