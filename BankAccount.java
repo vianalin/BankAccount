@@ -4,7 +4,6 @@ public class BankAccount {
 	private String password;
 
 	public BankAccount(int accountID, String password) {
-		balance = 0;
 		this.accountID = accountID;
 		this.password = password;
 	}
@@ -17,6 +16,18 @@ public class BankAccount {
 		return accountID;
 	}
 
+	public void setPassword(String newPass) {
+		this.password = newPass;
+	}
+
+	public boolean deposit(double amount) {
+		if(amount < 0) return false;
+		balance += amount;
+		return true;
+	}
+
 	
+
+
 }
 	
