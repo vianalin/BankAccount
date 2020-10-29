@@ -1,6 +1,7 @@
 public class Tester{
 	public static void main(String[] args) {
 		BankAccount a = new BankAccount(100, "hi world");
+		BankAccount b = new BankAccount(200, "hi");
 
 		System.out.println(a.getBalance()); //bal
 
@@ -21,5 +22,8 @@ public class Tester{
 
 		System.out.println(a.toString()); //testing tostring
 
+		System.out.println(a.transferTo(b, 15, "hello world")); //authen and trans to
+		System.out.println(a.getBalance()); //testing if it worked
+		System.out.println(b.getBalance()); //testing if it worked
 	}
 }
